@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+  	// A $( document ).ready() block.
+	$( 
+
+
+
+		$("#animation-event").click(function(){
+			
+			$.get( "animation.html", function( data ) {
+				alert(data);
+		  		$( "#animation-content" ).html( data );
+		 
+			});
+		});
+	    
+		
+	});
+  </script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <style>
+  	html {
+  		padding: 2em;
+  		overflow-y: scroll;
+  	}
+  	ul.nav li {
+  		margin-top: -0.25em;
+  	}
+  	#bringdown{
+  		margin-top:0.75em;
+  	}
+  	body {
+  		font-family: 'Roboto', sans-serif;
+  	}
+  	p {
+  		font-family: 'Roboto', sans-serif;
+  	}
+  	#sidebar {
+  		margin-top: 25px;
+  	}
+  	#contact-info {
+  		font-size: 0.8em;
+  	}
+  	.pad {
+  		padding: 2.5em;
+  	}
+  	.caption {
+  		text-align: left;
+  		margin-top: 1em;
+  	}
+  	.row a:link {color:black; text-decoration:none;}
+  	.row a:visited:hover {color:black; text-decoration:none;}
+  	.row a:link:hover {color:black; text-decoration:none;}
+  	.row a:active {color: black; text-decoration:none;}
+  
+
+.navbar-default {
+    border-color: transparent;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+
+.navbar-collapse {
+    border-color: transparent;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+
+.navbar-default .navbar-collapse {
+    border-color: transparent;
+    box-shadow: none;
+    background-color: #ffffff;
+}
+
+  // Mixin itself
+@mixin clearfix() {
+  &::after {
+    display: block;
+    content: "";
+    clear: both;
+  }
+}
+
+// Usage as a mixin
+.element {
+  @include clearfix;
+}
+  	
+ 
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+  	
+
+      <div class="col-sm-3 sidenav">
+      	
+
+    <div class="row content">
+
+    	<nav class="navbar navbar-default navbar-fixed top">
+    
+      <div class="navbar-header">
+        	
+        	<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mydropdown" style="float:right">
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        		<span class="icon-bar"></span>
+        	</button>
+
+        	<h4 style="font-family: 'Arial', sans-serif;">ben raymond</h4>
+        
+        
+
+        <div class="collapse navbar-collapse" id="mydropdown">
+        <div id="bringdown">
+	        <ul class="nav nav-stacked" id="tabs" class="nav nav-tabs" role="tablist">
+	          <li role="presentation" class="active"><a href="#all" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-th-large"></i> &nbsp;&nbsp;work</a></li> 
+	          <li role="presentation"><a ha href="#online" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-user"></i> &nbsp;&nbsp;about</a></li>
+	          <li role="presentation"><a href="#offline" role="tab" data-toggle="tab"><i class="glyphicon glyphicon-envelope"></i> &nbsp;&nbsp;contact</a></li>
+	        </ul>
+
+	        <div id="contact-info"><br>
+          <span>ben.ray.com@gmail.com</span><br/>
+          <span>edmonton, ab<br></span>
+        </div>
+
+	    </div>
+        </div>
+        </div>
+        </nav>
+
+        
+      </div>
+     </div>
+
+
+
+
+<!-- Nav tabs -->
+
+
+      
+      <div class="col-sm-9">
+        <!--<h4>3D Animation</h4>-->
+        <div class="tab-content">
+	        <!-- ABOUT -->
+	        <div role="tabpanel" class="tab-pane fade" id="online">
+	        	<h4>about</h4>
+	        	<p>I'm an 18 year old Digital Media & IT student from Canada, currently focusing on art direction, graphic design, and web design.</p><br><br>
+
+	        	<div id="list1" style="float:left; padding-right: 5em; padding-bottom: 2em;">
+		        	<div style="font-size: 0.9em;">Software:<br></div>
+		        	<ul style="font-size: 0.7em;list-style-type: none;margin: 0; padding: 0; ">
+		        		<li>Maya</li>
+		        		<li>After Effects</li>
+		        		<li>Photoshop</li>
+		        		<li>ZBrush</li>
+		        		<li>Houdini</li>
+		        		<li>Cinema 4D</li>
+		        		<li>Mari</li>
+		        	</ul>
+	        	</div>
+
+	        	<div id="list2" style="float:left; padding-right: 5em; padding-bottom: 2em;">
+		        	<div style="font-size: 0.9em;">Code:<br></div>
+		        	<ul style="font-size: 0.7em;list-style-type: none;margin: 0; padding: 0; ">
+		        		<li>HTML</li>
+		        		<li>CSS</li>
+		        		<li>Javascript</li>
+		        		<li>Three.js</li>
+		        		<li>jQuery</li>
+		        		<li>Bootstrap</li>
+		        		<li>Java</li>
+		        	</ul>
+	        	</div>
+
+	        	
+	        	<div style="font-size: 0.9em;">Links:</div>
+	        	<div style="font-size: 0.8em;">
+		        	<a href="http://behance.net/dlnt">Behance</a><br>
+		        	<a href="http://vimeo.com/tired">Vimeo</a>
+	        	</div>
+
+        	</div>
+
+	        <!-- CONTACT -->
+	  		<div role="tabpanel" class="tab-pane fade" id="offline">
+	  			<h4>contact</h4>
+	        	<p>ben.ray.com@gmail.com</p>
+	  		</div>
+
+	  		<!-- WORK -->
+	        <div role="tabpanel" class="tab-pane fade in active" id="all">
+		        <div class="row">
+		          <div class="col-md-6">
+		            <div class="pad">
+		              <a role="presentation" href="#animation" role="tab" data-toggle="tab" id="animation-event">
+		                <img src="images/001.jpg" alt="Lights" style="width:100%">
+		                <div class="caption">
+		                  <p style="font-size: 0.8em">01</p>
+		                </div>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="col-md-6">
+		            <div class="pad">
+		              <a href="images/002.jpg" target="_blank">
+		                <img src="images/002.jpg" alt="Nature" style="width:100%">
+		                <div class="caption">
+		                  <p style="font-size: 0.8em">02</p>
+		                </div>
+		              </a>
+		            </div>
+		          </div>
+		        </div>
+
+		        <div class="row">
+		          <div class="col-md-6">
+		            <div class="pad">
+		              <a href="images/003.jpg" target="_blank">
+		                <img src="images/003.jpg" alt="Lights" style="width:100%">
+		                <div class="caption">
+		                  <p style="font-size: 0.8em">03</p>
+		                </div>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="col-md-6">
+		            <div class="pad">
+		              <a href="images/004.jpg" target="_blank">
+		                <img src="images/004.jpg" alt="Nature" style="width:100%">
+		                <div class="caption">
+		                  <p style="font-size: 0.8em">04</p>
+		                </div>
+		              </a>
+		            </div>
+		          </div>
+		        </div>
+
+		        <div class="row">
+		          <div class="col-md-6">
+		            <div class="pad">
+		              <a href="images/005.jpg" target="_blank">
+		                <img src="images/005.jpg" alt="Lights" style="width:100%">
+		                <div class="caption">
+		                  <p style="font-size: 0.8em">05</p>
+		                </div>
+		              </a>
+		            </div>
+		          </div>
+		          <div class="col-md-6">
+		            <div class="pad">
+		              <a href="images/006.jpg" target="_blank">
+		                <img src="images/006.jpg" alt="Nature" style="width:100%">
+		                <div class="caption">
+		                  <p style="font-size: 0.8em">06</p>
+		                </div>
+		              </a>
+		            </div>
+		          </div>
+	        	</div>
+
+	        </div> <!-- END WORK -->
+
+	        <!-- ANIMATION -->
+	  		<div role="tabpanel" class="tab-pane fade" id="animation">
+	  			<div id="animation-content"></div>
+	  		</div>
+
+        </div> <!-- END tabcontent -->
+
+      </div> <!-- END COLUMN -->
+
+      </div>
+    </div>
+ 
+
+  <footer class="container-fluid">
+    <p style="font-size: 0.8em; text-align: right;">copyright &copy; 2017</p>
+  </footer>
+
+ 
+
+</body>
+</html>
